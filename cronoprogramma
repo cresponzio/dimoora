@@ -1,0 +1,133 @@
+CRONOPROGRAMMA
+
+INBOX - DASHBOARD :
+	tabella comunicazioni(...., letto(T/F), accetta(T/F/NULL), attesa_risposta (T/F) )
+	tabella allegato_comunicazione( comunicazioni, allegato );	
+	tabella stats_immobile( immobile, visite, preferiti )
+
+	fare la inbox con i msg ricevuti, seguire il Psd dashboard.psd
+	mostrare almeno due comunicazioni (se presenti), selezionare da tabella comuncazioni
+		collegamento con la pagina che contiene tutti i msg;	
+		espandere il msg, segnarlo come letto nella tabella comunicazioni;
+		possibilità di eliminare la comunicazione;
+		possibilità di risponde al msg;
+	se l'utente ha inserito un immobile viene mostrato come da PSD (dashboard.psd), con la grafica e i dati dell'immobile:
+	recuperare i dati del database, in piu vengono visualizzate le visite ricevute, e le volte che quell immobile è stato messo tra i preferiti;
+	le visite e i preferiti vengono presi da stats_preferiti
+	Modifica immobile, si apre la scheda con tutti i dati dell'imobile da modifcare, si puo usare la stessa grafica del flusso A, con i valori presi dal DB, si sviluppa con PHP, Jquery/javascript e AJAX, creare una input nascosta prima di modificare con l'id dell immobile;
+	salvare la modifica dell'immobile nella tabella cronologia;
+	nuova richiesta, aprire una nuova scheda con un forum dove si inserisce del testo che viene inviato via email a Dimoora e venga salvato nelle comunicazioni, come come comunicaizoni inviata;
+
+DOCUMENTI:
+	tabella documenti( cliente, immobile, documento)
+	creare html+css Documenti, presa da Documenti.psd;
+	mostrare i primi 10 Documenti, quando si scorre la pagina verso caricarne altri e cosi via, se non ci sono altri documenti mostrare un avviso che non ce ne sono altri, da fare con AJAX, JQUERY, e PHP
+	ricerca documenti, quando si inizia digitare mostrare i risultati nel riquadro sottostante, da fare AJAX, JQUERY e PHP;
+	quando si clicca sui 3 punti espandere la riga del documento e mostrare tutti i dati del documento e un pulsante che permetta di scaricarlo
+
+IMMOBILE.PSD (mostrare gli immobili caricati dall'utente)
+	parte grafica gia sviluppata
+	caricare i dati corretti nell'indirizzo, mq e locali(anche se per ora non li carichiamo)
+	in ultima modifica, mostrare la cronologia dell'ultima modifica dell'immobile;
+	modifica, vedi modifica immobile in INBOX-DASHBOAD, dopo il salvataggio mostrare scheda immobile salvata, nel caso passare link scheda in modo che ritorni alla scheda dell'immobile con i dati aggiornati, fare con Jquery, AJAX e PHP o con unform html+php;
+	visite ricevute,click ecc... recuperare da immobile_stats
+INBOX TOTALI:
+	fare parte grafica html+css;
+	mostrare tutte le comunicazioni, fare lo stesso procedimento come per i documenti, mostrare i primi 10 e poi a seguire;
+	schiacciare il pulsante rosso e salvare la comunicazione come letta nel DB;
+	simbolo >, mostrare tutti i dati della comunicazione, «allungare» graficamente la finestra per mostrare tutti i dati, fare con JQUERY, AJAX e PHP, se sono presenti allegati inserire un pulsante con scritto «scarica», che permetta di scaricare il file e un pulsante accetta/rifiuta se il valore attesa_risposta è impostato a true;
+	ricerca, seguire lo stesso procedimento di Documenti;
+
+MENU MOBILE (.psd) - notifica campana
+	quando si effettua il login, controllare se sono presenti comunicazioni nel database, se si mostrare il cerchio rosso con il numero;
+	salvare il numero in una variabile di sessione;
+	quando si clicca sulla campana mostrare le prime 3 notifiche non lette
+	come si apre la comunicazione diminuire il valore della variabile di sessione di -3 o azzerare, fare la stessa cosa per il numero nel cerchi rosso;
+	vedi tutte le notifiche, aprire scheda INBOX TOTALI;
+MENU MOBILE (.psd) - secondo riquadro
+	Vendi, collegare alla prima scheda del flusso A e impostare la select cosa vuoi fare su Vendere;
+	Affita, idem;
+	Dimoora, aprire frontend;
+	Agenti, da implementare, manca il PSD e concordare meglio
+MENU MOBILE (.psd) - terzo riquadro
+	recuperare i dati dalla tabella utente
+	mostrare foto utente e nome utente;
+	nelle case mostrare tutti gli immobili che l'utente ha caricato, quando si clicca aprire la scheda di quell'immobile;
+	Dashboard, mostrare INBOX DASHBOARD
+	inbox, mostrare INBOX TOTALI;
+	richieste, aprire pagina RICHIESTE_ELENCO
+	immobile, chiarimenti? collegare a immobile.psd ? flusso A? o mostrare tutti gli immobili presenti in Dimoora?
+	offerte ricevute, aprire pagina OFFERTE_RICEVUTE
+	offerte effettuate, aprire pagina OFFERTE_EFFETTUATE;
+	Tours, aprire TOURS;
+	immobili preferiti, vedi IMMOBILI_PREFERITI
+	ricerche salvate, non abbiamo il PSD
+	creare tabella ricerche_utente( utente, testo);
+	mostrare elenco ricerche stile la INBOX_TUTTI con la possibilità di ripetere la ricerca cliccandoci sopra, vedere in base al PSD;
+	documenti, aprire pagina DOCUMENTI;
+	Profilo, aprire dati del Profilo => prima scheda flusso A (quando si fa l'accesso la prima volta) o creare nuovo PSD ;
+	Impostazioni, non abbiamo il PSD;
+	Logout, fa il logout ( gia sviluppata );
+
+OFFERTE RICEVUTE
+	creare/modificare tabella offerta( ID, venditore, immobile, acquirente, stato data, ora, rilanciata_da_venditore )
+	stato può essere accettata, rifiutata, in attesa, rilanciata
+	rilanciata_da_venditore (true/false)
+	tabella dettaglio_offerta( offerta, importo_offerta, importo_max, deliberato, tempo_acquisto, data_preliminare, importo_atti, importo_mutuo );
+	mostrate tutte le offerte ricevute non rifiutate e non rilanciate da venditore
+	se si clicca su Accetta l'offerta viene salvata come Accettata, l'immobile viene impostato come Venduto;
+	Rifiutata, l'offerta viene salvata come Rifiutata e viene eliminata «graficamente» (non dal db) dalla scheda, usare Js/Jquery;
+	Rilanciare, mostrare al posto dei pulsanti (con js/jquery) Accetta, Rifiuta e Rilancia una input dove inserire il nuovo importo, un pulsante Salva e Annulla;
+	Salva, viene creata una nuova offerta con rilanciata_da_venditore impostato a true e rilanciata;
+		viene salvata una comunicazione nel Db da parte del venditore verso l'acquirente dove viene indicata la nuova offerta;
+	  se l'acquirente aprendo la comunicazione clicca su accetta verrà creata una nuova offerta con stato in attesa, altrimenti l'offerta con il rilancio viene cancellata;
+	annulla ritorna indietro;
+	dettagli, vengono mostrati i dettagli dell'offerta;
+
+OFFERTE EFFETTUATE
+	mostrare le fatta dal possibile acquirente;
+	l'utente può eliminare l'offerta, e in automatico viene elimata dal DB;
+	Rilancia, aprire la input come nella parte precedente:
+	se salva creo la nuova offerta ed elimino la precedente;
+	annulla, ritorna indietro;
+	dettaglio offerte, idem come nel punto 7 precedente;
+
+IMMOBILI PREFERITI
+	mostra immobili gli immobili contrassegnati come preferiti, legge da immobili_pref(utente, immobile ) ;
+	Prenota Tour, manca PSD, => selezionare data e ora, inserimento di eventuale nota e Salvare o Annullare;
+	Salva in tabella tours(utente, agente, immobile, data, ora , nota ) e invia email agli utenti(compratore e venditore),  crea due comunicazionie e email:
+		una verso l'acquirente con i dati di riepilogo del tour;
+	 	l'altra verso il Venditore, indicando con un utente deve fare un tour nella casa in vendita in tale giorno e tale ora;
+	Fai un'offerta, manca il PSD, in sostanza deve essere una finestra con input, prezzo offerta e prezzo max, che salvi i dati nella tabella offerta e offerta_descrizione e tutti i vari dati di un offerta 'in attesa', inviare email ai due utenti(compr. e vend.), salvare comunicazione con i dati delle offerte (sai per compr. che per vend.)
+	se si clicca sul Cuore, si rimuove dai preferiti, nella tabella 	immobili_pref(utente, immobile ) si elimina il dato e si decrementa di uno immobili_stats(.... preferiti );
+
+RICHIESTA
+	creare tabella Richiesta(id,utente,descrizione,categoria,budget,quando_risp,immobile, tipo,data, ora)
+	categoria int FK categoria_richiesta(id), quando_risp stringa, immobile FK immobile(id), tipo stringa (vendita/acquisto) 
+	creare tabella
+	categoria_richiesta(id, nome_categoria )
+	L'utente inserisce i dati, seleziona la categoria da categoria_richiesta;
+	invia richisesta, salva i dati richiesta e manda email a segreteria@dimoora, alla sua casella di posta , salva nelle sue comunicazioni e nella timelines	
+RICHIESTE ELENCO
+	da scrivere
+TIMELINE
+	da scrivere
+TOURS
+	da scrivere
+RICERCA, (LENTE)
+	da scrivere
+CAMBIA FOTO
+	da scrivere
+CAMBIA PASSWORD
+	da scrivere
+AGENTI
+	da scrivere
+PARTE DESKTOP
+	da scrivere
+COLLEGAMENTO CON GESTIONALE	
+	collegare tabelle utenti, e le nuove tabelle con il gestionale già presente in modo da poter essere gestito come superadmin, da scrivere
+	
+
+
+		
+ 
