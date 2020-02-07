@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dimoora • Home</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Marco Gentile • Flow WebDesign">
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="http://example.com/favicon.ico" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lora:400i&display=swap" rel="stylesheet">
+    </head>
+    
+    <style>
+        
+        /*--------------------------
+            MENU
+        --------------------------*/
+        
+        div.topMenu li a{
+            color: #fff;
+        }
+        
+        /*--------------------------
+            TEXT
+        --------------------------*/
+        
+        h2, h3{
+            color: #23262D !important;
+        }
+        
+        h2{
+            font-size: 32px;
+            font-weight: 400;
+            line-height: auto;
+            text-align: center;
+            width: 620px;
+            margin: 0px auto;
+            opacity: 1;
+        }
+        
+        h3{
+            font-size: 23px;
+            opacity: 1;
+            line-height: auto;
+            text-align: center;
+            width: 320px;
+            margin: 0px auto;
+            opacity: 1;
+            color: rgba(0, 0, 0, 0.8)
+        }
+        
+        h3 span{
+            font-weight: 400;
+            color: #000;
+        }
+        
+        p{
+            opacity: 1;
+            font-family: 'Mukta Mahee', sans-serif;
+            line-height: auto;
+            text-align: center;
+            font-weight: 200;
+            font-size: 15px;
+            width: 500px;
+            margin: 0px auto;
+            margin-top: 20px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        
+        p span{
+            color: #000;
+            font-weight: 400;
+        }
+        
+        /*--------------------------
+            GENERAL
+        --------------------------*/
+        
+        img.icon{
+            height: 90px;
+            margin-bottom: 20px;
+        }
+        
+        button{
+            padding: 7px 20px;
+            font-size: 16px;
+            display: block;
+            margin: 20px auto;
+        }
+        
+        i.fa-chevron-down{
+            font-size: 27px;
+            color: var(--baseRed);
+        }
+        
+        i.fa-check{
+            color: var(--baseRed);
+            margin-left: -25px;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        /*--------------------------
+            01
+        --------------------------*/
+        section#IA .container{
+            display: inline-block;
+            margin: 50px 30px 0px 30px;
+        }
+        
+        section#IA .container i{
+            color: var(--baseRed);
+            font-size: 26px;
+            float: left;
+        }
+        
+        section#IA .container h5{
+            float: left;
+            line-height: 26px;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-left: 7px;
+        }
+        
+        section#IA .container p{
+            width: auto;
+            margin: 8px 0px 0px 33px;
+            text-align: left;
+        }
+        
+        @media(max-width: 660px){
+            /*--------------------------
+                TEXT
+            --------------------------*/
+
+            h2{
+                width: 90% !important;
+            }
+            
+            h3{
+                width: 75% !important;
+            }
+            
+            p{
+                width: 85% !important;
+            }
+            
+            /*--------------------------
+                TOPBAR
+            --------------------------*/
+            
+            section.topBar{
+                height: auto !important;
+            }
+        }
+        
+        @media(max-width: 760px){
+            
+            /*--------------------------
+                01
+            --------------------------*/
+            section#IA .container{
+                display: block;
+                width: 210px;
+                margin: 50px auto 0px auto;
+            }
+            
+            div.side{
+                width: 100% !important;
+                text-align: center !important;
+                padding: 40px 0px !important;
+            }
+            
+            div.sideIn{
+                width: 80% !important;
+                margin: 0px auto !important;
+                text-align: center !important;
+            }
+            
+            div.sideIn h3{
+                margin: 0px auto !important;
+                width: 100% !important;
+            }
+            
+            div.sideIn p{
+                margin: 20px auto !important;
+                width: 100% !important;
+            }
+            
+            
+        }
+        
+        @media(max-width: 920px){
+            div#service{
+                margin: 50px 0px 20px 0px !important;
+            }
+        }
+        
+        @media(max-width: 1080px){
+            
+            div.topMenu li a{
+                color: #000;
+                margin-left: 0px !important;
+            }
+            
+            div#agent{
+                background: #fff !important;
+            }
+            
+            div.side{
+                height: 380px !important;
+            }
+        }
+    </style>
+    
+    <body>
+        
+        <section class="topBar" style="background-image: url(img/indexBg.png); height: 340px; background-attachment: fixed; background-position: top; background-size: fixed;" >
+            <i class="fas fa-bars topMenuIcon" onclick="menuAction('.topMenu')"></i>
+            
+            <img src="img/logo.png" id="logo">
+            
+            <div class="topMenu">
+                <i class="fas fa-times menuIcon" onclick="menuAction('.topMenu')"></i>
+                <li id="phone"><a href="tel:+39066552053"><i class="fas fa-phone"></i> +39 06 8552 053</a></li>
+                <li><a>Vendi</a></li>
+                <li><a>Affitta</a></li>
+                <li><a>Agenti</a></li>
+                <li><a>Valuta il tuo immobile</a></li>
+                <li><a style="padding: 4px 8px; border-radius: 3px; border: 1px solid var(--baseRed); margin-left: 15px;">Sign In</a></li>
+            </div>
+            
+            <h2 style="margin-top: 57.5px; color: #fff !important;">Vuoi vendere la tua casa ad un prezzo vantaggioso e nel minor tempo possibile?</h2>
+            <p style="color: rgba(255, 255, 255, 0.7) !important;">Stai alla larga da chi ti promette di di acquistare la tua casa in 30 giorni, a meno che tu non voglia svenderla o essere vincolato a vita.</p>
+            <button style="text-transform: uppercase; display: block;">Valuta la tua casa</button>
+        </section>
+        
+        <section id="IA" style="text-align: center; padding: 40px 0px;">
+            <img src="img/index1.png" class="icon">
+            <h3>La prima <span>intelligenza artificiale per il settore immobiliare</span></h3>
+            <p>Con Dimoora, puoi calcolare il <span>REALE</span> valore della tua casa all'istante e il tempo necessario per venderla, con o senza il supporto di un agente immobiliare</p>
+            
+            <div class="container">
+                <i class="fas fa-times-circle" style=""></i>
+                <h5>Niente</h5>
+                <br>
+                <p>Prezzi sotto la Media di Mercato</p>
+            </div>
+            
+            <div class="container">
+                <i class="fas fa-times-circle" style=""></i>
+                <h5>Niente</h5>
+                <br>
+                <p>Vincoli occulti</p>
+            </div>
+            
+            <div class="container">
+                <i class="fas fa-times-circle" style=""></i>
+                <h5>Niente</h5>
+                <br>
+                <p>Speculazioni sulla tua prprietà</p>
+            </div>
+            
+            <div style="padding: 40px 0px; margin-top: 60px; background: #EEEEEF;">
+                <h2 style="text-transform: uppercase; margin-bottom: 30px; width: 650px;">Vendi la tua casa senza rischiare di svenderla o che si svaluti in poco tempo</h2>
+                <button class="black">Ottieni ora una valutazione gratuita!</button>
+            </div>
+        </section>
+        
+        <section id="lines" style="padding: 0px 0px 40px 0px; text-align: center;">
+            <p>Sei pronto per trasferirti oppure vuoi semplicemente vendere una proprietà nel minor tempo possibile ma non sai a chi rivolgerti?</p>
+            
+            <div style=" width: 70%; margin: 20px auto; text-align: center;">
+                <hr>
+                <i class="fas fa-chevron-down" style="position: relative; top: -15px; width: 40px; background: #fff;"></i>
+            </div>
+            
+            <p>Magari ti sei già rivolto ad agenzie ed agenti immobiliari, ma le proposte che ti hanno fatto non ti hanno convinto.</p>
+            
+            <div style=" width: 70%; margin: 45px auto 0px auto;">
+                <hr>
+                <h3 style="position: relative; font-weight: 400; top: -14.5px; background: #fff; padding: 0px 20px; text-transform: uppercase; display: inline-block; width: auto; border: 1px solid #E1E1E1; line-height: 30px;">Oppure</h3>
+            </div>
+            
+            <p style="width: 650px">Non ti fidi delle agenzie tradizionali e hai già cercato online servizi e siti per vendere la tua casa in fretta al miglior prezzo, ma non sai quale sia la soluzione più adatta a te e soprattutto se ti puoi fidare di questi sistemi.</p>
+            
+            <h3 style="margin-top: 40px; text-transform: uppercase; width: 500px;">In entrambi i casi, <span>smetti pure di cercare</span></h3>
+            <p style="width: 550px;">In questa pagina troverai la soluzione più veloce, sicura e vantaggiosa per vendere la tua casa nel minor tempo possibile senza doverti necessariamente rivolgere ad un'agenzia.</p>
+            <button>Inserisci gratis il tuo annuncio!</button>
+            <p style="font-size: 12px; width: 220px; margin-top: 0px;;">Attendi di essere contattato da un nostro city manager che ti supporterà nel processo di pubblicazione</p>
+        </section>
+        
+        <section style="margin-top: 40px; background: #23262D; padding: 40px 0px; text-align: center;">
+            <img src="img/index2.png" class="icon" style="display: block; margin: -75px auto; position: relative; transform: scale(1.2)">
+            <h3 style="color: #fff !important; margin-top: 120px; width: 550px;">Scommetto che avrai già avuto modo di trovare siti e agenzie che ti hanno promesso di <span style="color: #fff">acquistare la tua casa in 30 giorni al miglior prezzo possibile.</span></h3>
+            
+            <p style="text-align: left; width: auto !important; display: inline-block; padding:  20px 25px; border-radius: 5px; background: #fff; margin-right: 10px;">Se sei qui, ovviamente, è perché la loro<br>promessa non ti ha convinto del tutto.<br>Inutile dire che <span>i tuoi dubbi sono<br>del tutto leciti.</span></p>
+            
+            <p style="text-align: left; width: auto !important; display: inline-block; padding:  18px 23px; border-radius: 5px; border: 2px solid #fff; color: #fff !important; position: relative; top: 30px; margin-left: 10px;">Pensaci, è come se il dentista ti<br>promettesse di raddrizzare tutti i tuoi<br>denti in sole due settimane<br>ad un prezzo vantaggioso.</p>
+            
+            <h3 style="margin-top: 60px;"><span style="color: #fff !important;">Incredibile, non è così?</span></h3>
+            <p style="color: #fff !important">Peccato che si sia dimenticato di dirti che dovrai tornare da lui ogni settimana per i prossimi dieci anni e che, in realtà, il prezzo “vantaggioso” era in realtà nella media. Non è poi così incredibile come offerta. Lo stesso vale per le agenzie che ti promettono di acquistare la tua casa in 30 giorni.</p>
+            
+            <div style="width: 0px; height: 0px; line-height: 0px; border-top: 30px solid #23262D; border-left: 30px solid transparent; border-right: 30px solid transparent; margin: 0px auto; position: relative; top: 60px"></div>
+        </section>
+        
+        <section style="padding: 40px 0px;">
+            <h3 style="width: 600px; padding: 30px; margin-top: 30px; background: #F2F1F1;">In realtà, la loro proposta “vantaggiosa” è sotto <span>la media di mercatoanche del 20%</span> e il contratto che sei obbligato a firmare ti vincola per anni, <span>mentre l'agenzia specula sulla tua casa.</span></h3>
+            <p>Tutto questo non viene menzionato da nessuna parte, ecco come molte persone come te, che vogliono vendere la loro casa in fretta, finiscono nella loro trappola. Vuoi davvero rischiare di vendere la tua casa ad un prezzo ridicolo e di essere vincolato per anni con un'agenzia che si diverte a speculare sulla tua proprietà a tua insaputa?</p>
+            <div style="margin: 20px auto; text-align: center;">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <h3 style="width: 550px;"><span>Non penso proprio che tu lo voglia</span></h3>
+            <p style="width: 600px;">Se invece vuoi vendere la tua casa nel minor tempo possibile al suo valore <span>REALE</span>, senza correre il rischio di vincoli o di speculazioni sulla tua proprietà, allora <span>Dimoora</span> è la soluzione che fa per te.</p>
+            <button>Inserisci gratis il tuo annuncio!</button>
+            <p style="font-size: 12px; width: 220px; margin-top: 0px;;">Attendi di essere contattato da un nostro city manager che ti supporterà nel processo di pubblicazione</p>
+        </section>
+        
+        <section style="background: #F2F1F1; padding: 40px; text-align: center;">
+            <img src="img/index3.png" class="icon">
+            <h3><span>Con Dimoora puoi guadagnare<br><span style="font-size: 40px; line-height: 45px;">Fino al 7% in più</span></span></h3>
+            <p style="margin: 0px auto; font-size: 18px; color: rgba(0, 0, 0, 0.8);">dalla vendita del tuo immobile rispetto alla media di mercato.</p>
+            <p>Attraverso gli indici di gradimento, la nostra intelligenza artificiale riesce a calcolare il valore reale della tua proprietà e il tempo minimo necessario per la vendita. Con questo vantaggio competitivo sul mercato, non solo puoi vendere il tuo immobile in 6 settimane, ma anche al prezzo più alto.</p>
+        </section>
+        
+        <section style="padding: 40px; text-align: center;">
+            <h3 style="width: 500px; font-size: 18px; font-family: 'Lora', serif; color: rgba(0, 0, 0, 0.7) !important;">Vendere la tua casa adesso con Dimoora è semplicissimo</h3>
+            
+            <div style="display: inline-table; margin: 50px 30px 0px 30px;">
+                <img src="img/index4.png" class="icon" style="transform: scale(0.75); margin: 0px;">
+                <p style="width: 160px; margin: 0px;"><span style="color: rgba(0, 0, 0, 0.8) !important">Calcola il valore della tua proprietà all'istante</span> <span class="colorChange" style="text-decoration: underline;">Senza alcun costo</span></p>
+            </div>
+            
+            <div style="display: inline-table; margin: 50px 30px 0px 30px;">
+                <img src="img/index5.png" class="icon" style="transform: scale(0.75); margin: 0px;">
+                <p style="width: 160px; margin: 0px;"><span style="color: rgba(0, 0, 0, 0.8) !important">Inserisci il tuo annuncio sul</span> <span class="colorChange" style="text-decoration: underline;">Marketplace di Dimoora</span></p>
+            </div>
+            
+            <div style="display: inline-table; margin: 50px 30px 0px 30px;">
+                <img src="img/index6.png" class="icon" style="transform: scale(0.75); margin: 0px;">
+                <p style="width: 160px; margin: 0px;"><span style="color: rgba(0, 0, 0, 0.8) !important">Vendi la tua casa</span> <span class="colorChange" style="text-decoration: underline;">Entro 90 giorni!</span></p>
+            </div>
+        </section>
+        
+        <section style="background: #23262D; padding: 40px;">
+            <p style="color: #fff !important">Vorresti vendere la tua casa senza rivolgerti ad una agenzia immobiliare, ma allo stesso tempo non vuoi doverti occupare di tutte le faccende burocratiche?</p>
+            
+            <div style="margin: 20px auto; text-align: center;">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            
+            <h3 style="width: 550px; font-size: 25px;"><span style="color: #fff !important;">Ci pensiamo noi!</span></h3>
+            <p style="color: #fff !important; margin: 10px auto;">Ottieni ora una valutazione gratuita!</p>
+            
+            <button style="background: #fff; color: #23262D; margin: 20px auto 10px auto;">Procedi adesso</button>
+            <p style="font-size: 12px; width: 280px; margin-top: 0px; color: #fff;">Attendi di essere contattato da un nostro city manager che ti supporterà nel processo di pubblicazione</p>
+        </section>
+        
+        <section style="padding: 40px;">
+            <h3 style="width: 560px;"><span>Scegli la soluzione Dimoora più adatta alle tue esigenze!</span></h3>
+            <p style="margin-top: 15px;">Sappiamo che vendere un immobile non è semplice e che non tutti vogliono compiere questo passo da soli, ecco perché mettiamo a tua disposizione i nostri agenti immobiliari per velocizzare i tempi e semplificare il processo di vendita.</p>
+            <div style="background: url(img/indexBg2.jpg); width: 100%; height: 300px; background-position: center; background-size: cover; text-align: center;" id="agent">
+                <div style="display: inline-block; width: 220px; margin: 25px 0px; padding: 30px 0px; border: 1px solid #ccc">
+                    <img src="img/index7.png" class="icon">
+                    <h3 style="width: auto;"><span>Scegli l'agente più adatto a te!</span></h3>
+                    <button class="black" style="text-transform: uppercase; margin: 10px auto 0px auto;">Vai</button>
+                </div>
+            </div>
+            <p>Nella sezione Agenti potrai scegliere il professionista più adatto alle tue esigenze da avere sempre al tuo fianco durante la vendita della tua proprietà.</p>
+        </section>
+        
+        <section class="group">
+            <div class="side" style="width: calc(50% - 80px); background: #23262D; padding: 40px; float: left; height: 260px;">
+                <div class="sideIn" style="margin-left: 30%; width: 55%; display: inline-block; text-align: center;">
+                    <img src="img/index8.png" class="icon">
+                    <h3 style="color: #fff !important; text-align: left; margin: 0px; width: 100%">Condividi la tua proprietà su Dimoora per venderla nel minor tempo possibile!</h3>
+                    <p style="width: 100%; color: rgba(255, 255, 255, 0.7); text-align: left;">Senza alcun costo, puoi accedere alla nostra sezione Inserzioni e pubblicare lì la tua proprietà per raggiungere il maggior numero di clienti nel minor tempo possibile. </p>
+                </div>
+            </div>
+            
+            <div class="side" style="width: calc(50% - 80px); background: #E9E9EA; padding: 40px; float: left; height: 260px">
+                <div class="sideIn" style="width: 65%; margin-left: 10%;">
+                    <p style="text-align: left; width: 100%;">Utilizza i nostri strumenti per monitorare lo stato del tuo annuncio e accedi ai servizi esclusivi per diminuire ULTERIORMENTE i tempi di vendita del tuo immobile</p>
+                    <p style="text-align: left; width: 100%;">Scegli un servizio fotografico professionale della tua casa o scegli di ottenere più visibilità anche al di fuori della piattaforma.</p>
+                    <h3 style="margin: 30px 0px 0px 0px; text-align: left;">Con Dimoora, vendere la tua casa non è mai stato così facile</h3>
+                    <button class="black" style="margin: 20px 0px 0px 0px">Inserisci Annuncio</button>
+                </div>
+            </div>
+        </section>
+        
+        <section style="padding: 50px 40px; text-align: center;">
+            <h3><span>Non rimanere nel passato: <br> Scegli l'innovazione con Dimoora</span></h3>
+            <p><span>Dimoora non ti permette solo di avere una stima reale del valore della tua proprietà e di venderla in 6 settimane.</span></p>
+            <p>Grazie al marketplace dedicato, puoi ottenere massima visibilità per il tuo immobile, così da poter raggiungere il tuo acquirente ideale nel minor tempo possibile. Inoltre, scegliendo l'aiuto di agenti immobiliari esperti del settore, potrai ridurre ancora di più il tempo necessario per la vendita della tua casa.</p>
+            <h3 style="width: 560px; font-size: 18px; font-family: 'Lora', serif; color: rgba(0, 0, 0, 0.7) !important; margin-top: 40px;">Pubblicizziamo il tuo immobile nei migliori portali immobiliario</h3>
+            <img src="img/indexLogo1.png" style=" width: 100px; margin: 20px; display: inline-table; height: 80px; object-fit: contain;">
+            <img src="img/indexLogo2.png" style=" width: 100px; margin: 20px; display: inline-table; height: 80px; object-fit: contain;">
+            <img src="img/indexLogo3.png" style=" width: 100px; margin: 20px; display: inline-table; height: 80px; object-fit: contain;">
+            <img src="img/indexLogo4.png" style=" width: 100px; margin: 20px; display: inline-table; height: 80px; object-fit: contain;">
+            <img src="img/indexLogo5.png" style=" width: 100px; margin: 20px; display: inline-table; height: 80px; object-fit: contain;">
+            <button style="margin: 0px auto 20px auto !important;">Inserisci gratuitamente il tuo annuncio!</button>
+            <p style="font-size: 12px; width: 220px; margin-top: 0px;;">Attendi di essere contattato da un nostro city manager che ti supporterà nel processo di pubblicazione</p>
+        </section>
+        
+        <section style="padding: 40px 0px; background: #F4F4F4; text-align: center;">
+            <div style="display: inline-table; width: 220px;">
+                <h3 style="width: 100%; text-align: left;"><span>Dimoora Free</span></h3>
+                <p style="width: 100%; text-align: left; margin-top: 10px;">Con Dimoora Free hai a disposizione tutti gli strumenti per vendere la tua casa gratuitamente e controllare l'andamento della tua inserzione</p>
+                <p style=" width: 100%; text-align: left; margin-top: 20px; display: inline-block;"><span style="padding: 0px 10px; border: 1px solid var(--baseRed); border-radius: 3px;">Commissioni 0%</span></p>
+                <button class="black" style="margin: 25px 0px 10px 0px;">Inserisci annuncio</button>
+                <p style="font-size: 12px; width: 220px; margin-top: 0px; text-align: left;">Attendi di essere contattato da un nostro city manager che ti supporterà nel processo di pubblicazione</p>
+            </div>
+            
+            <div style="padding: 20px 30px; background: #fff; display: inline-table; margin-left: 60px; border: 1px solid #d7d7d7; position: relative; top: 20px;" id="service">
+                <h3 style="font-size: 18px; font-family: 'Lora', serif; color: rgba(0, 0, 0, 0.7) !important;margin-bottom: 15px;">Servizi Inclusi</h3>
+                <div style="display: inline-block; width: 180px; padding: 0px 20px;">
+                    <p style="width: auto; text-align: left; padding-left: 10px;"><i class="fas fa-check"></i>Supporto con city manager</p>
+                    <p style="width: auto; text-align: left; padding-left: 10px;"><i class="fas fa-check"></i>Annuncio pubblicato sui maggiori portali Immobiliari</p>
+                    <p style="width: auto; text-align: left; padding-left: 10px;"><i class="fas fa-check"></i>Marketing cartaceo: cartello di Vendita, flyers, cartoline, scheda immobile</p>
+                </div>
+                <div style="display: inline-block; width: 180px; padding: 0px 30px 0px 45px;">
+                    <p style="width: auto; text-align: left;"><i class="fas fa-check"></i>Supporto con city manager</p>
+                    <p style="width: auto; text-align: left;"><i class="fas fa-check"></i>Annuncio pubblicato sui maggiori portali Immobiliari</p>
+                    <p style="width: auto; text-align: left;"><i class="fas fa-check"></i>Marketing cartaceo: cartello di Vendita, flyers, cartoline, scheda immobile</p>
+                </div>
+            </div>
+        </section>
+        
+        <section style="padding: 40px; text-align: center;">
+            <h3>Con Dimoora i tuoi vantaggi non finiscono qui!</h3>
+            <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                <h5 style="font-size: 15px; text-align: left;"><i class="fas fa-check-square" style="font-size: 22px; color: var(--baseRed); margin-right: 10px;margin-left: -30px;position: relative; top: 5px"></i>Fino al 7% in più sulla vendita del tuo immobile</h5>
+                <p style="width: 100%; text-align: left; margin-top: 7px;">Utilizzando i servizi Dimoora puoi ottenere fino al 7% in più sulla vendita del tuo immobile, senza vincoli occulti o speculazioni sulla tua proprietà.</p>
+            </div>
+            
+            <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                <h5 style="font-size: 15px; text-align: left;"><i class="fas fa-check-square" style="font-size: 22px; color: var(--baseRed); margin-right: 10px;margin-left: -30px;position: relative; top: 5px"></i>Esperti sempre al tuo fianco</h5>
+                <p style="width: 100%; text-align: left; margin-top: 7px;">Non sai come vendere la tua proprietà? Ci siamo noi! I nostri esperti sono sempre pronti per aiutarti nella vendita del tuo immobile, passo dopo passo.</p>
+            </div>
+            
+            <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                <h5 style="font-size: 15px; text-align: left;"><i class="fas fa-check-square" style="font-size: 22px; color: var(--baseRed); margin-right: 10px;margin-left: -30px;position: relative; top: 5px"></i>MarketPlace Immobiliare</h5>
+                <p style="width: 100%; text-align: left; margin-top: 7px;">Dimoora ti offre un MarketPlace immobiliare dove pubblicare l'annuncio della tua casa per raggiungere i tuoi potenziali acquirenti all'istante.</p>
+            </div>
+            
+            <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                <h5 style="font-size: 15px; text-align: left;"><i class="fas fa-check-square" style="font-size: 22px; color: var(--baseRed); margin-right: 10px;margin-left: -30px;position: relative; top: 5px"></i>Documenti a portata di mano</h5>
+                <p style="width: 100%; text-align: left; margin-top: 7px;">Hai bisogno dei documenti della tua proprietà? Con Dimoora puoi salvare online tutte le carte e i documenti necessari per la vendita e l'affitto della tua casa. Accedi ai file ogni volta che vuoi, senza dover perdere tempo per cercarli in giro per casa.</p>
+            </div>
+        </section>
+        
+        <section style="padding: 40px; background: #23262D">
+            <h2 style="color: #fff !important; text-transform: uppercase; width: 70%">Non rischiare di svalutare la tua casa. Vendila nel minor tempo possibile e guadagna fino al 7% in più di profitto con Dimoora!</h2>
+            <button style="background: #fff; color: #23262D;">Ottieni ora una valutazione gratuita!</button>
+        </section>
+        
+        <section style="padding: 40px; text-align: center;">
+            <h3 style="width: 500px;">La tecnologia Dimoora: solo i numeri che contano</h3>
+            <p style="width: 600px;">Grazie alla tecnologia Dimoora puoi moltiplicare la visibilità del tuo immobile e arrivare subito al tuo acquirente ideale. Puoi verificare le offerte per la tua casa in tempo reale e online accedendo semplicemente alla tua dashboard</p>
+            
+            <div style="display: inline-table; width: 190px; margin: 30px 40px;">
+                <h3 style="width: 100%; transform: scale(1.4)"><span>+12K</span></h3>
+                <p style="width: 100%">Il venditore Dimoora risparmia in media € 12.000</p>
+            </div>
+            
+            <div style="display: inline-table; width: 190px; margin: 30px 40px;">
+                <h3 style="width: 100%; transform: scale(1.4)"><span>99%</span></h3>
+                <p style="width: 100%">La percentuale di case vendute entro 90 giorni su Dimoora (guadagnando di più della media)</p>
+            </div>
+            
+            <div style="display: inline-table; width: 190px; margin: 30px 40px;">
+                <h3 style="width: 100%; transform: scale(1.4)"><span>+20%</span></h3>
+                <p style="width: 100%">City Manager disponibili per aiutarti a vendere la tua casa</p>
+            </div>
+            
+            <div style="display: inline-table; width: 190px; margin: 30px 40px;">
+                <h3 style="width: 100%; transform: scale(1.4)"><span>+134%</span></h3>
+                <p style="width: 100%">Case vendute nell'ultimo anno</p>
+            </div>
+        </section>
+        
+        <section style="background: #F4F4F4; padding: 40px; text-align: center;">
+            <h3 style="font-size: 27px; ">Clienti soddisfatti</h3>
+            
+            <div style="overflow-y: hidden; overflow-x: scroll">
+                <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                    <i class="fas fa-quote-right"></i>
+                    <h5 style="transform: scale(1.3); text-transform: uppercase; margin-top: 10px; width: 100%;">Larry page</h5>
+                    <p style="width: 100%; transform: scale(0.8); margin: 0px;">Founder at Google</p>
+                    <p style="width: 100%; font-family: 'Lora', serif; line-height: 18px; margin-top: 10px;">Who can receive the hypnosis and shame ofa yogi if he has the fraternal afterlife of the sun.</p>
+                </div>
+
+                <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                    <i class="fas fa-quote-right"></i>
+                    <h5 style="transform: scale(1.3); text-transform: uppercase; margin-top: 10px; width: 100%;">Larry page</h5>
+                    <p style="width: 100%; transform: scale(0.8); margin: 0px;">Founder at Google</p>
+                    <p style="width: 100%; font-family: 'Lora', serif; line-height: 18px; margin-top: 10px;">Who can receive the hypnosis and shame ofa yogi if he has the fraternal afterlife of the sun.</p>
+                </div>
+
+                <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                    <i class="fas fa-quote-right"></i>
+                    <h5 style="transform: scale(1.3); text-transform: uppercase; margin-top: 10px; width: 100%;">Larry page</h5>
+                    <p style="width: 100%; transform: scale(0.8); margin: 0px;">Founder at Google</p>
+                    <p style="width: 100%; font-family: 'Lora', serif; line-height: 18px; margin-top: 10px;">Who can receive the hypnosis and shame ofa yogi if he has the fraternal afterlife of the sun.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section style="padding: 40px; text-align: center;">
+            <h3>Ricerca per quartiere</h3>
+            <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                <div style="background-image: url(img/indexSearch1.png); width: 100%; height: 150px; background-size: cover;">
+                    <h3 style="width: 100%; line-height: 150px; color: #fff !important;">Roma</h3>
+                </div>
+            </div>
+            
+            <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                <div style="background-image: url(img/indexSearch2.png); width: 100%; height: 150px; background-size: cover;">
+                    <h3 style="width: 100%; line-height: 150px; color: #fff !important;">Milano</h3>
+                </div>
+            </div>
+            
+            <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                <div style="background-image: url(img/indexSearch3.png); width: 100%; height: 150px; background-size: cover;">
+                    <h3 style="width: 100%; line-height: 150px; color: #fff !important;">Bologna</h3>
+                </div>
+            </div>
+            
+            <div style="display: inline-table; width: 170px; margin: 30px 40px;">
+                <div style="background-image: url(img/indexSearch4.png); width: 100%; height: 150px; background-size: cover;">
+                    <h3 style="width: 100%; line-height: 150px; color: #fff !important;">Torino</h3>
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+            
+            function menuAction(menu){
+                $(menu).toggleClass('open');
+            }
+        
+        </script>
+        
+    </body>
+</html>
