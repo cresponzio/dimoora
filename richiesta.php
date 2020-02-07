@@ -72,7 +72,7 @@
                                     <!-- FORM ELEMENTS -->
                                     <form class="panel-body form-horizontal">
                                         <div class="form-group">
-                                            <label style="font-weight: bold; text-align:left" class="col-xs-12 control-label" for="demo-textarea-input"><img src="images/icons/red-message.png">&nbsp;Descrivi il servizio a cui sei interessato,<br/>sii il più dettagliato possibile</label>
+                                            <label style="font-weight: bold; text-align:left" class="col-xs-12 control-label" for="demo-textarea-input"><img src="images/icons/red-message.png">&nbsp;Descrivi il servizio a cui sei interessato, sii il più dettagliato possibile</label>
                                             <div class="col-xs-12">
                                                 <textarea id="demo-textarea-input" rows="5" class="form-control" placeholder="Sono interessato a:"></textarea>
                                             </div>
@@ -91,7 +91,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label style="font-weight: bold; text-align:left" class="control-label col-xs-12"><img src="images/icons/red-plus.png">&nbsp;Lorem ipsum sin dolr</label>
+                                            <label style="font-weight: bold; text-align:left" class="control-label col-xs-12"><img src="images/icons/red-plus.png">&nbsp;Scegli una categoria</label>
                                             <div class="col-xs-12">
                                                 <!-- Default Bootstrap Select -->
                                                 <select class="form-control selectpicker">
@@ -104,14 +104,14 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label style="font-weight: bold; text-align:left" class="col-xs-12 control-label" for="demo-text-input"><img src="images/icons/red-euro.png">&nbsp;Lorem ipsum sin dolr</label>
+                                            <label style="font-weight: bold; text-align:left" class="col-xs-12 control-label" for="demo-text-input"><img src="images/icons/red-euro.png">&nbsp;Qual'è il tuo budget</label>
                                             <div class="col-xs-12">
                                                 <input type="text" id="demo-text-input" class="form-control" placeholder="€ Lorem ipsum sin dolr">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-xs-12">
-                                                <button class="btn btn-block" style="font-size:16px; padding:10px; background-color:#fd5962; color:white">Lorem ipsum</button>
+                                                <button class="btn btn-block" style="font-size:16px; padding:10px; background-color:#fd5962; color:white">Invia Richiesta</button>
                                             </div>
                                         </div>
                                     </form>
