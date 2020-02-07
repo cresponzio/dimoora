@@ -26,7 +26,7 @@
             </div>
             
             <div class="menuIconContainer">
-                <i class="fas fa-bell"></i>
+                <i class="fas fa-bell" style="position:relative; right: -15px;"><span style="background: var(--baseRed); width: 18px; line-height: 20px;text-align:center; position:relative; display: inline-block;color:#fff;border-radius: 50%; font-family:'Mukta Mahee', sans-serif; top:-12px; left: -10px;font-size: 12px;">1</span></i>
                 <i class="fas fa-search" onclick="menuAction('.search'); colorChange(this);"></i>
                 <i class="fas fa-user" onclick="menuAction('.mainMenu');"></i>
             </div>
@@ -34,11 +34,11 @@
             <div class="topMenu">
                 <i class="fas fa-times menuIcon" onclick="menuAction('.topMenu')"></i>
                 <li id="phone"><a href="tel:+39066552053"><i class="fas fa-phone"></i> +39 06 8552 053</a></li>
-                <li><a>Vendi</a></li>
-                <li><a>Compra</a></li>
+                <li><a href="home.php?azione=vendi">Vendi</a></li>
+                <li><a href="home.php?azione=affitta">Compra</a></li>
                 <li><a>Affitta</a></li>
                 <li><a>Agenti</a></li>
-                <li><a>Dimoora</a></li>
+                <li><a href="/index.php">Dimoora</a></li>
             </div>
         </section>
         
