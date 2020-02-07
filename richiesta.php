@@ -68,17 +68,17 @@
                             <div class="col-lg-4 col-lg-offset-4">
                                 <!--Panel Content-->
                                 <div class="panel">
-                                    <h4 style="text-align: center; font-weight: bold" class="panel-title">Fai una richies...</h4> 
+                                    <h4 style="text-align: center; font-weight: bold" class="panel-title">Fai una richiesta. Dimoora è qui per te</h4> 
                                     <!-- FORM ELEMENTS -->
                                     <form class="panel-body form-horizontal">
                                         <div class="form-group">
-                                            <label style="font-weight: bold; text-align:left" class="col-xs-12 control-label" for="demo-textarea-input"><img src="images/icons/red-message.png">&nbsp;Lorem ipsum sin dolr</label>
+                                            <label style="font-weight: bold; text-align:left" class="col-xs-12 control-label" for="demo-textarea-input"><img src="images/icons/red-message.png">&nbsp;Descrivi il servizio a cui sei interessato,<br/>sii il più dettagliato possibile</label>
                                             <div class="col-xs-12">
-                                                <textarea id="demo-textarea-input" rows="5" class="form-control" placeholder="Lorem ipsum sin dolr"></textarea>
+                                                <textarea id="demo-textarea-input" rows="5" class="form-control" placeholder="Sono interessato a:"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label style="font-weight: bold; text-align:left" class="control-label col-xs-12"><img src="images/icons/red-right.png">&nbsp;Lorem ipsum sin dolr</label>
+                                            <label style="font-weight: bold; text-align:left" class="control-label col-xs-12"><img src="images/icons/red-right.png">&nbsp;Una volta effettuata la richiesta, quando vorresti ricevere le proposte?</label>
                                             <div class="col-xs-12">
                                                 <!-- Default Bootstrap Select -->
                                                 <select class="form-control selectpicker">
