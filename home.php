@@ -33,8 +33,8 @@
                 <h5>Cosa vuoi fare?*</h5>
                 <select type="select" name="action">
                     <option value="">Seleziona</option>
-                    <option>Vendere</option>
-                    <option>Affittare</option>
+                    <option id="vendi">Vendere</option>
+                    <option id="affitta">Affittare</option>
                 </select>
                 <h5>Via / piazza*</h5>
                 <input type="text" name="street" placeholder="Indirizzo">
@@ -910,6 +910,16 @@
         </section>
         
         <?php } ?>
+
+        <script>
+            var azione = "<?php $action = $_GET['azione']; echo $action;?>";
+            if(azione == "vendi"){
+                document.getElementById('vendi').setAttribute('selected', 'true');
+            }
+            else if(azione == 'affitta'){
+                document.getElementById('affitta').setAttribute('selected', 'true');
+            }
+        </script>
 
         <script type="text/javascript">
             
