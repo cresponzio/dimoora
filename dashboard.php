@@ -101,6 +101,8 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
     section.inbox div.container p.text2{
         height:0px; 
         overflow:hidden;
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.6);
         transition: height 2s;
     }
     
@@ -182,7 +184,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
             $query2->execute(['id' => $comunicazione["id"]]);
             $allegato = $query2->fetch();
         ?>
-        <a href="<?php echo $allegato["percorso"]; ?>">
+        <a href="<?php echo $allegato["percorso"]; ?>" style="display:block; margin-top: 10px;"><i class="fas fa-paperclip" style="color:var(--baseRed);margin-right: 5px;"></i>
                 Visualizza Allegato
         </a>
         </p>
