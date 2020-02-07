@@ -26,6 +26,11 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         margin: 0px auto;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         padding: 5px 20px;
+        cursor: pointer;
+    }
+    
+    section.inbox div.container:hover{
+        transform: scale(1.01);
     }
     
     section.inbox div.container img{
@@ -93,6 +98,16 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         top: 4px;
     }
     
+    section.inbox div.container p.text2{
+        height:0px; 
+        overflow:hidden;
+        transition: height 2s;
+    }
+    
+    section.inbox div.container p.text2.open{
+        height: auto;
+    }
+    
     @media(max-width: 556px){
         section.inbox{
             width: 100%;
@@ -149,7 +164,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
     <section class="inbox standardBoxStyle" style="margin-top: 30px;">
         <h2>Inbox</h2>
         <?php while($comunicazione = $query1->fetch()): ?>
-        <div class="container">
+        <div class="container" id="<?php echo $comunicazione["id"]; ?>" onclick="messageSeen(this)">
             <img src="img/profile.jpg">
             <div class="message">
                 <p><?php
@@ -158,7 +173,8 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
                 <p class="text"><?php echo $comunicazione["titolo"]; ?></p>
             </div>
             <p class="time">9:00 <i class="fas fa-angle-right"></i></p>
-            <div class="new"></div>
+        <?php if($comunicazione["letto"] == 0) { ?><div class="new"></div><?php } ?>
+        <p class="text2" style="padding: 0px 40px;"><?php echo $comunicazione["testo"]; ?></p>
         </div>
         <?php endwhile ?>
 
@@ -214,6 +230,25 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
 </body>
 <script>
     $('#dashboard').addClass('open');
+    
+    function messageSeen(item){
+        id = $(item).attr('id');
+        $.ajax({
+            url: 'php/comunicazioni/messageSeen.php',
+            method: 'GET',
+            data: {messageId:id},
+            dataType: 'text',
+            success: function(){
+                console.log('Lettura Confermata');
+            }
+        })
+
+        
+        $('div#' + id + ' p.text2').toggleClass('open');
+        $('div#' + id + ' div.new')[0].style.display = "none"; 
+    }
+
+
 </script>
 
 <? include("footer.html")?>
