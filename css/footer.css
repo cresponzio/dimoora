@@ -1,0 +1,70 @@
+@media(max-width: 1153px) {
+    section#footer {
+        padding-top: 0px !important;
+    }
+    
+    div#footer0, div#footer1, div#footer2, div#footer3 {
+        display: block !important;
+        width: calc(100% - 40px) !important;
+        margin: 0px auto !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 20px !important;
+        padding-bottom: 15px !important;
+    }
+    
+    div#footer0 {
+        border: 0px !important;
+        float: none !important;
+        padding-top: 50px !important;
+    }
+    
+    div#footer1, div#footer2, div#footer3 {
+        height: 40px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    div#footer1 i, div#footer2 i, div#footer3 i {
+        display: inline-block !important;
+        float: right;
+        top: -5px !important;
+    }
+    
+    div#footer1 p#footerTitle, div#footer2 p#footerTitle, div#footer3 p#footerTitle {
+        color: rgba(255, 255, 255, 0.6) !important;
+        margin: 0px !important;
+        width: 100% !important;
+    }
+    
+    div#footer1.open, div#footer2.open, div#footer3.open {
+        height: auto !important;
+    }
+    
+    div#footerBottom {
+        width: calc(100% - 90px) !important;
+        margin: 0px 0px 0px 0px !important;
+        padding: 20px !important;
+    }
+    
+    div#footerBottom #i {
+        left: 0px !important;
+        top: -50px;
+    }
+    
+    div#footerBottom p {
+        margin:  20px 0px 0px 0px !important;
+        width: 
+    }
+}
+
+.footer_link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+div#footer1 p#footerTitle, div#footer2 p#footerTitle, div#footer3 p#footerTitle {
+    margin: 0px !important;
+    color: #fff;
+    font-size: 19px;
+    width: auto;
+    text-align: left;
+}
