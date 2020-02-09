@@ -18,7 +18,7 @@ $query->setFetchMode(PDO::FETCH_ASSOC);
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Marco Gentile • Flow WebDesign">
-        <link type="text/css" rel="stylesheet" href="main.css">
+        <link type="text/css" rel="stylesheet" href="css/main.css">
         <link rel="icon" type="image/x-icon" href="http://example.com/favicon.ico" />
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">

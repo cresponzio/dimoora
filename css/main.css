@@ -836,7 +836,7 @@ div.offer input{
         z-index: 2;
         padding: 110px 0px 100% 50px;
         background: #fff;
-        width: calc(100% - 50px);
+        width: calc(100%);
         -webkit-transition: left 0.5s;
         -moz-transition: left 0.5s;
         -o-transition: left 0.5s;
@@ -914,7 +914,7 @@ div.offer input{
         z-index: 3;
         padding: 85px 0px 0px 50px;
         background: #fff;
-        width: calc(100% - 50px);
+        width: calc(100%);
         -webkit-transition: right 0.5s;
         -moz-transition: right 0.5s;
         -o-transition: right 0.5s;

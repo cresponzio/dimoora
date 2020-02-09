@@ -240,8 +240,8 @@ p {
 
 #content-container {
 	position: relative;
-	padding-top: 65px;
-	padding-bottom: 65px;
+	/*padding-top: 65px;*/
+	/*padding-bottom: 35px;*/
 }
 
 /* PAGE HEADER */
@@ -278,7 +278,7 @@ p {
 	padding: 10px 20px 0
 }
 #content-container {
-	padding-top: 60px
+	/*padding-top: 60px*/
 }
 
 #page-title {
@@ -5484,7 +5484,7 @@ hr {
 /* Panel */
 
 .panel{
-  border: none;
+  /*border: none;*/
   border-radius: 0px;
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
@@ -5497,7 +5497,7 @@ hr {
 }
 .panel-heading { 
   position: relative;
-  height: 50px;
+  height: 40px;
   border-radius: 0;
   border: none !important;
   padding: 0px;
@@ -6178,10 +6178,9 @@ hr {
 
 
 /* Tab Base */
-
-
 .tab-base {
-	margin-bottom: 35px
+	margin-bottom: 35px;
+	box-shadow: 0 7px 14px 0 rgba(49, 49, 93, 0.10), 0 3px 6px 0 rgba(0, 0, 0, 0.08);
 }
 .tab-base .tab-content {
 	background-color: #fff;
@@ -8824,6 +8823,7 @@ li.ui-state-default:last-child{
   color: #a9a9a9;
   font-size: 11px;
 }
+
 /*===============================================
    Tag Cloud Widget 
 =================================================*/
@@ -8837,4 +8837,168 @@ li.ui-state-default:last-child{
     padding-top: 5px;
     line-height: 15px;
     font-size: 12px;
+}
+
+/*===============================================
+   Custom Row
+=================================================*/
+.row-simple-line {
+	padding: 10px 0;
+}
+
+/*===============================================
+   Custom Col
+=================================================*/
+.col-simple-line {
+	text-align: left;
+	padding: 0 0
+}
+
+/*===============================================
+   Custom Tab
+=================================================*/
+.tab-2-col {
+	width:50%;
+	text-align:center;
+}
+
+/*===============================================
+   Custom Button
+=================================================*/
+.btn-red-simple {
+	font-size:16px;
+	padding:10px;
+	margin-top: 30px;
+	background-color:#fd5962;
+	color:white;
+}
+.btn-red-multi2 {
+	width: 46%;
+	font-size:16px;
+	margin-top: 30px;
+	background-color:#fd5962;
+	color:white;	
+}
+.btn-dark-multi2 {
+	width: 46%;
+	font-size:16px;
+	margin-top: 30px;
+	background-color:#303339;
+	color:white;	
+}
+.btn-secondary-multi2 {
+	width: 46%;
+	font-size:16px;
+	margin-top: 30px;
+	background-color:#938f8f;
+	color:white;	
+}
+.btn-red-multi3 {
+	width: 31%;
+	font-size:16px;
+	margin-top: 30px;
+	background-color:#fd5962;
+	color:white;	
+}
+.btn-dark-multi3 {
+	width: 31%;
+	font-size:16px;
+	margin-top: 30px;
+	background-color:#303339;
+	color:white;	
+}
+.btn-secondary-multi3 {
+	width: 31%;
+	font-size:16px;
+	background-color:#938f8f;
+	color:white;	
+}
+.btn-red-vertical {
+	font-size:16px;
+	background-color:#fd5962;
+	color:white;	
+}
+.btn-dark-vertical {
+	font-size:16px;
+	background-color:#303339;
+	color:white;	
+}
+.btn-secondary-vertical {
+	font-size:16px;
+	margin-top: 30px;
+	background-color:#938f8f;
+	color:white;	
+}
+.btn-dropdown {
+	background-color: #ebebeb;
+	margin-top: 10px;
+	box-shadow: none;
+}
+
+/*===============================================
+   Custom Label
+=================================================*/
+.label-simple-style {
+	display: block;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+/*===============================================
+   Custom Span
+=================================================*/
+.span-bold-1 {
+	font-weight: bold;
+	font-size:18px;
+}
+.span-price {
+	font-weight: bold;
+	font-size:20px;
+}
+.span-price-lg {
+	font-weight: bold;
+	font-size:22px;
+}
+
+/*===============================================
+   Custom Panel
+=================================================*/
+.panel-card {
+	margin-bottom: 20px;
+	border: 2px solid;
+	border-radius: 8px;
+	border-color: #e5e5e5;
+	background-color: #f6f6f6;
+}
+.panel-card-body {
+	padding: 0 20px;
+}
+.panel-body-white {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	border:solid 1px #e0e0e0;
+	border-radius: 8px;
+}
+.panel-body-black {
+	padding: 15px;
+	background-color: #ebebeb;
+	border-radius: 8px;
+	border:solid 1px #e0e0e0;
+}
+
+/*===============================================
+   Custom Font
+=================================================*/
+.font-weight-bold-custom {
+	font-weight: bold;
+}
+
+/*===============================================
+   Custom Font
+=================================================*/
+.cusotom_hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
 }

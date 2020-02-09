@@ -19,7 +19,7 @@
     }
     
     div#footer1, div#footer2, div#footer3 {
-        height: 40px;
+        height: 50px;
         overflow: hidden;
         cursor: pointer;
     }

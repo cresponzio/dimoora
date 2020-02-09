@@ -56,3 +56,13 @@
         </div>
     </section>
 </footer>
+
+<!--JAVASCRIPT-->
+<!--jQuery [ REQUIRED ]-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<!--jQuery UI [ REQUIRED ]-->
+<script src="js/jquery-ui.min.js"></script>
+<!--BootstrapJS [ RECOMMENDED ]-->
+<script src="js/bootstrap.min.js"></script>
+<!--Form Component [ SAMPLE ]-->
+<script src="js/components/form-component.js"></script>
