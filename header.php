@@ -96,6 +96,7 @@
 
     
     <script src="js/components/ui-panels.js"></script>
+    <script src="js/components/ui-tab.js"></script>
     <script src="js/components/switchery.min.js"></script>
 
     <script>

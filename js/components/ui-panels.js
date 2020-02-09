@@ -62,13 +62,15 @@
 	$("[data-click=panel-collapse-1]").closest(".panel").find(".panel-body-1").slideToggle();
     $("[data-click=panel-collapse-1]").click(function(e) {
         e.preventDefault();
-        $(this).closest(".panel").find(".panel-body-1").slideToggle()
+        $(this).closest(".panel").find(".panel-body-1").slideToggle();
+        $(this).children('.fa').toggleClass('fa-chevron-up fa-chevron-down');
     });
 	
 	$("[data-click=panel-collapse-2]").closest(".panel").find(".panel-body-2").slideToggle();
     $("[data-click=panel-collapse-2]").click(function(e) {
         e.preventDefault();
-        $(this).closest(".panel").find(".panel-body-2").slideToggle()
+        $(this).closest(".panel").find(".panel-body-2").slideToggle();
+        $(this).children('.fa').toggleClass('fa-chevron-up fa-chevron-down');
     });
 
 	// RELOAD PANEL

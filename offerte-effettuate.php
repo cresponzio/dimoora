@@ -62,7 +62,7 @@
                                                                  <span class="label-simple-style text-right">SI</span>
                                                             </div>
                                                             <div class="col-xs-12">
-                                                                <hr class="cusotom_hr"/>
+                                                                <hr class="custom-hr"/>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -73,7 +73,7 @@
                                                                  <span class="label-simple-style text-right">SI</span>
                                                             </div>
                                                             <div class="col-xs-12">
-                                                                <hr class="cusotom_hr"/>
+                                                                <hr class="custom-hr"/>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -84,7 +84,7 @@
                                                                  <span class="label-simple-style text-right">45 GG</span>
                                                             </div>
                                                             <div class="col-xs-12">
-                                                                <hr class="cusotom_hr"/>
+                                                                <hr class="custom-hr"/>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -95,7 +95,7 @@
                                                                  <span class="label-simple-style text-right">10.11.2019</span>
                                                             </div>
                                                             <div class="col-xs-12">
-                                                                <hr class="cusotom_hr"/>
+                                                                <hr class="custom-hr"/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -145,7 +145,7 @@
                                                                  <span class="label-simple-style text-right">SI</span>
                                                             </div>
                                                             <div class="col-xs-12">
-                                                                <hr class="cusotom_hr"/>
+                                                                <hr class="custom-hr"/>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -156,7 +156,7 @@
                                                                  <span class="label-simple-style text-right">SI</span>
                                                             </div>
                                                             <div class="col-xs-12">
-                                                                <hr class="cusotom_hr"/>
+                                                                <hr class="custom-hr"/>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -167,7 +167,7 @@
                                                                  <span class="label-simple-style text-right">45 GG</span>
                                                             </div>
                                                             <div class="col-xs-12">
-                                                                <hr class="cusotom_hr"/>
+                                                                <hr class="custom-hr"/>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -178,7 +178,7 @@
                                                                  <span class="label-simple-style text-right">10.11.2019</span>
                                                             </div>
                                                             <div class="col-xs-12">
-                                                                <hr class="cusotom_hr"/>
+                                                                <hr class="custom-hr"/>
                                                             </div>
                                                         </div>
                                                     </div>

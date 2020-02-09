@@ -322,12 +322,12 @@ p {
 /* Image background */
 
 .bg-img {
-	position: absolute;
+	/*position: absolute;*/
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	opacity: .55;
+	/*opacity: .55;*/
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -2778,7 +2778,7 @@ a.disabled-link, a.disabled-link:visited, a.disabled-link:active, a.disabled-lin
 
 .timeline {
 	position: relative;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 	color: #515151
 }
 .timeline:before, .timeline:after {
@@ -2789,15 +2789,15 @@ a.disabled-link, a.disabled-link:visited, a.disabled-link:active, a.disabled-lin
 	position: absolute
 }
 .timeline:before {
-	left: 49px;
-	top: 20px;
+	left: 9px;
+	top: 45px;
 	width: 2px
 }
 .timeline:after {
-	left: 47px;
+	/*left: 47px;
 	width: 6px;
 	height: 6px;
-	border-radius: 50%
+	border-radius: 50%*/
 }
 .timeline-header {
 	border-radius: 0;
@@ -2817,13 +2817,14 @@ a.disabled-link, a.disabled-link:visited, a.disabled-link:active, a.disabled-lin
 	margin-top: 15px
 }
 .timeline-stat {
-	width: 100px;
+	/*width: 100px;*/
 	float: left;
 	text-align: center;
-	padding-bottom: 15px
+	padding-bottom: 15px;
+	padding-top: 14px;
 }
 .timeline-entry {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	margin-top: 5px;
 	position: relative;
 	clear: both
@@ -2865,7 +2866,7 @@ a.disabled-link, a.disabled-link:visited, a.disabled-link:active, a.disabled-lin
 .timeline-label {
 	background-color: #fff;
 	border-radius: 0;
-	margin-left: 90px;
+	margin-left: 35px;
 	padding: 10px;
 	position: relative;
 	min-height: 50px;
@@ -2899,13 +2900,30 @@ a.disabled-link, a.disabled-link:visited, a.disabled-link:active, a.disabled-lin
 .panel .timeline-label {
 	box-shadow: none;
 	background-color: #f7f7f7;
-	border: 1px solid #e3e3e3
+	border: 1px solid #e3e3e3;
+	border-radius: 7px;
 }
 .panel .timeline-label:before {
 	border-right-color: #e3e3e3
 }
-.panel .timeline-label:after {
-	border-right-color: #f7f7f7
+
+.tab-base .after-color-yellow:after {
+	border-right-color: #f8eec7
+}
+.tab-base .after-color-blue:after {
+	border-right-color: #91b0f7
+}
+.tab-base .after-color-red:after {
+	border-right-color: #fb8087
+}
+.tab-base .after-color-green:after {
+	border-right-color: #a5e9b7
+}
+.tab-base .after-color-orange:after {
+	border-right-color: #f9aa87
+}
+.tab-base .after-color-sky:after {
+	border-right-color: #a5e9e5
 }
 
 /* Two Column Timeline */
@@ -5958,10 +5976,10 @@ hr {
 	margin-left: -1px
 }
 .panel-control {
-	height: 100%;
+	/*height: 100%;*/
 	position: relative;
 	float: right;
-	padding: 0 15px
+	/*padding: 0 15px*/
 }
 .panel-control:before {
 	content: '';
@@ -8845,6 +8863,9 @@ li.ui-state-default:last-child{
 .row-simple-line {
 	padding: 10px 0;
 }
+.row-simple-line2 {
+	margin: 20px 10px;
+}
 
 /*===============================================
    Custom Col
@@ -8866,10 +8887,18 @@ li.ui-state-default:last-child{
    Custom Button
 =================================================*/
 .btn-red-simple {
-	font-size:16px;
-	padding:10px;
-	margin-top: 30px;
+	margin-top: 10px;
 	background-color:#fd5962;
+	color:white;
+}
+.btn-dark-simple {
+	margin-top: 10px;
+	background-color:#303339;
+	color:white;
+}
+.btn-secondary-simple {
+	margin-top: 10px;
+	background-color:#938f8f;
 	color:white;
 }
 .btn-red-multi2 {
@@ -8910,6 +8939,7 @@ li.ui-state-default:last-child{
 .btn-secondary-multi3 {
 	width: 31%;
 	font-size:16px;
+	margin-top: 30px;
 	background-color:#938f8f;
 	color:white;	
 }
@@ -8925,7 +8955,6 @@ li.ui-state-default:last-child{
 }
 .btn-secondary-vertical {
 	font-size:16px;
-	margin-top: 30px;
 	background-color:#938f8f;
 	color:white;	
 }
@@ -8933,6 +8962,11 @@ li.ui-state-default:last-child{
 	background-color: #ebebeb;
 	margin-top: 10px;
 	box-shadow: none;
+}
+.btn-ellipse {
+	border-radius: 20px;
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2);
+	margin-bottom: 20px;
 }
 
 /*===============================================
@@ -8950,6 +8984,10 @@ li.ui-state-default:last-child{
 .span-bold-1 {
 	font-weight: bold;
 	font-size:18px;
+}
+.span-bold-2 {
+	font-weight: bold;
+	font-size:14px;
 }
 .span-price {
 	font-weight: bold;
@@ -8997,8 +9035,23 @@ li.ui-state-default:last-child{
 /*===============================================
    Custom Font
 =================================================*/
-.cusotom_hr {
+.custom-hr {
   margin-top: 5px;
   margin-bottom: 5px;
   border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.verticalLine {
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
 }

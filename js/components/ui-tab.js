@@ -26,5 +26,18 @@
         forceHelperSize: true
     });
 
+    $("[data-click=timeline-collapse-1]").closest(".tab-base").find(".timeline-body-1").slideToggle();
+    $("[data-click=timeline-collapse-1]").click(function(e) {
+        e.preventDefault();
+        $(this).closest(".tab-base").find(".timeline-body-1").slideToggle();
+        $(this).children('.fa').toggleClass('fa-chevron-up fa-chevron-down');
+    });
+    
+    $("[data-click=timeline-collapse-2]").closest(".tab-base").find(".timeline-body-2").slideToggle();
+    $("[data-click=timeline-collapse-2]").click(function(e) {
+        e.preventDefault();
+        $(this).closest(".tab-base").find(".timeline-body-2").slideToggle();
+        // $(this).children('.fa').toggleClass('fa-chevron-up fa-chevron-down');
+    });
 
  });
