@@ -235,7 +235,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
 
             <div id="left" style="width; 190px; float:left; padding: 10px 0px 0px 0px;">
                 <h5 style="margin-left: 0px; width: auto;"><?php echo $immobile["via"]; ?> <?php echo $immobile["civico"]; ?></h5>
-                <p style="margin-left: 0px"><?php echo $immobile["proprieta"]; ?></p>a
+                <p style="margin-left: 0px"><?php echo $immobile["proprieta"]; ?></p>
                 <h4 style="padding-right: 10px; margin-left:0px; border-right: 1px solid #000;"><?php echo $immobile["mq_coperti"]; ?> <span>Mq</span></h4>
                 <h4 style="padding-left: 10px; margin-left:0px">4 <span>Locali</span></h4>
             </div>
