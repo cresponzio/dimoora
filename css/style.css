@@ -8860,11 +8860,22 @@ li.ui-state-default:last-child{
 /*===============================================
    Custom Row
 =================================================*/
-.row-simple-line {
-	padding: 10px 0;
+@media (min-width:768px) {
+	.row-simple-line {
+		padding: 10px 0;
+	}
+	.row-simple-line2 {
+		margin: 20px 10px;
+	}
 }
-.row-simple-line2 {
-	margin: 20px 10px;
+
+@media (max-width:767px) {
+	.row-simple-line {
+		padding: 5px 0;
+	}
+	.row-simple-line2 {
+		margin: 10px 5px;
+	}
 }
 
 /*===============================================
@@ -8886,116 +8897,233 @@ li.ui-state-default:last-child{
 /*===============================================
    Custom Button
 =================================================*/
-.btn-red-simple {
-	margin-top: 10px;
-	background-color:#fd5962;
-	color:white;
-}
-.btn-dark-simple {
-	margin-top: 10px;
-	background-color:#303339;
-	color:white;
-}
-.btn-secondary-simple {
-	margin-top: 10px;
-	background-color:#938f8f;
-	color:white;
-}
-.btn-red-multi2 {
-	width: 46%;
-	font-size:16px;
-	margin-top: 30px;
-	background-color:#fd5962;
-	color:white;	
-}
-.btn-dark-multi2 {
-	width: 46%;
-	font-size:16px;
-	margin-top: 30px;
-	background-color:#303339;
-	color:white;	
-}
-.btn-secondary-multi2 {
-	width: 46%;
-	font-size:16px;
-	margin-top: 30px;
-	background-color:#938f8f;
-	color:white;	
-}
-.btn-red-multi3 {
-	width: 31%;
-	font-size:16px;
-	margin-top: 30px;
-	background-color:#fd5962;
-	color:white;	
-}
-.btn-dark-multi3 {
-	width: 31%;
-	font-size:16px;
-	margin-top: 30px;
-	background-color:#303339;
-	color:white;	
-}
-.btn-secondary-multi3 {
-	width: 31%;
-	font-size:16px;
-	margin-top: 30px;
-	background-color:#938f8f;
-	color:white;	
-}
-.btn-red-vertical {
-	font-size:16px;
-	background-color:#fd5962;
-	color:white;	
-}
-.btn-dark-vertical {
-	font-size:16px;
-	background-color:#303339;
-	color:white;	
-}
-.btn-secondary-vertical {
-	font-size:16px;
-	background-color:#938f8f;
-	color:white;	
-}
-.btn-dropdown {
-	background-color: #ebebeb;
-	margin-top: 10px;
-	box-shadow: none;
-}
-.btn-ellipse {
-	border-radius: 20px;
-	box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2);
-	margin-bottom: 20px;
+@media (min-width:768px) {
+	.btn-red-simple {
+		margin-top: 10px;
+		background-color:#fd5962;
+		color:white;
+	}
+	.btn-dark-simple {
+		margin-top: 10px;
+		background-color:#303339;
+		color:white;
+	}
+	.btn-secondary-simple {
+		margin-top: 10px;
+		background-color:#938f8f;
+		color:white;
+	}
+	.btn-red-multi2 {
+		width: 46%;
+		font-size:16px;
+		margin-top: 30px;
+		background-color:#fd5962;
+		color:white;	
+	}
+	.btn-dark-multi2 {
+		width: 46%;
+		font-size:16px;
+		margin-top: 30px;
+		background-color:#303339;
+		color:white;	
+	}
+	.btn-secondary-multi2 {
+		width: 46%;
+		font-size:16px;
+		margin-top: 30px;
+		background-color:#938f8f;
+		color:white;	
+	}
+	.btn-red-multi3 {
+		width: 31%;
+		font-size:16px;
+		margin-top: 30px;
+		background-color:#fd5962;
+		color:white;	
+	}
+	.btn-dark-multi3 {
+		width: 31%;
+		font-size:16px;
+		margin-top: 30px;
+		background-color:#303339;
+		color:white;	
+	}
+	.btn-secondary-multi3 {
+		width: 31%;
+		font-size:16px;
+		margin-top: 30px;
+		background-color:#938f8f;
+		color:white;	
+	}
+	.btn-red-vertical {
+		font-size:16px;
+		background-color:#fd5962;
+		color:white;	
+	}
+	.btn-dark-vertical {
+		font-size:16px;
+		background-color:#303339;
+		color:white;	
+	}
+	.btn-secondary-vertical {
+		font-size:16px;
+		background-color:#938f8f;
+		color:white;	
+	}
+	.btn-dropdown {
+		background-color: #ebebeb;
+		margin-top: 10px;
+		box-shadow: none;
+	}
+	.btn-ellipse {
+		border-radius: 20px;
+		box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2);
+		margin-bottom: 20px;
+	}
 }
 
+@media (max-width:767px) {
+	.btn-red-simple {
+		margin-top: 5px;
+		background-color:#fd5962;
+		color:white;
+	}
+	.btn-dark-simple {
+		margin-top: 5px;
+		background-color:#303339;
+		color:white;
+	}
+	.btn-secondary-simple {
+		margin-top: 5px;
+		background-color:#938f8f;
+		color:white;
+	}
+	.btn-red-multi2 {
+		width: 46%;
+		font-size:14px;
+		margin-top: 20px;
+		background-color:#fd5962;
+		color:white;	
+	}
+	.btn-dark-multi2 {
+		width: 46%;
+		font-size:14px;
+		margin-top: 20px;
+		background-color:#303339;
+		color:white;	
+	}
+	.btn-secondary-multi2 {
+		width: 46%;
+		font-size:14px;
+		margin-top: 20px;
+		background-color:#938f8f;
+		color:white;	
+	}
+	.btn-red-multi3 {
+		width: 31%;
+		font-size:14px;
+		margin-top: 20px;
+		background-color:#fd5962;
+		color:white;	
+	}
+	.btn-dark-multi3 {
+		width: 31%;
+		font-size:14px;
+		margin-top: 20px;
+		background-color:#303339;
+		color:white;	
+	}
+	.btn-secondary-multi3 {
+		width: 31%;
+		font-size:14px;
+		margin-top: 20px;
+		background-color:#938f8f;
+		color:white;	
+	}
+	.btn-red-vertical {
+		font-size:14px;
+		background-color:#fd5962;
+		color:white;	
+	}
+	.btn-dark-vertical {
+		font-size:14px;
+		background-color:#303339;
+		color:white;	
+	}
+	.btn-secondary-vertical {
+		font-size:14px;
+		background-color:#938f8f;
+		color:white;	
+	}
+	.btn-dropdown {
+		background-color: #ebebeb;
+		margin-top: 5px;
+		box-shadow: none;
+	}
+	.btn-ellipse {
+		border-radius: 20px;
+		box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2);
+		margin-bottom: 10px;
+	}
+}
 /*===============================================
    Custom Label
 =================================================*/
-.label-simple-style {
-	display: block;
-	font-weight: bold;
-	padding-top: 10px;
+@media (min-width:768px) {
+	.label-simple-style {
+		display: block;
+		font-weight: bold;
+		padding-top: 10px;
+	}
+}
+
+@media (max-width:767px) {
+	.label-simple-style {
+		display: block;
+		font-weight: bold;
+		padding-top: 5px;
+	}
 }
 
 /*===============================================
    Custom Span
 =================================================*/
-.span-bold-1 {
-	font-weight: bold;
-	font-size:18px;
+@media (min-width:768px) {
+	.span-bold-1 {
+		font-weight: bold;
+		font-size:18px;
+	}
+	.span-bold-2 {
+		font-weight: bold;
+		font-size:14px;
+	}
+	.span-price {
+		font-weight: bold;
+		font-size:18px;
+	}
+	.span-price-lg {
+		font-weight: bold;
+		font-size:21px;
+	}
 }
-.span-bold-2 {
-	font-weight: bold;
-	font-size:14px;
-}
-.span-price {
-	font-weight: bold;
-	font-size:20px;
-}
-.span-price-lg {
-	font-weight: bold;
-	font-size:22px;
+
+@media (max-width:767px) {
+	.span-bold-1 {
+		font-weight: bold;
+		font-size:16px;
+	}
+	.span-bold-2 {
+		font-weight: bold;
+		font-size:12px;
+	}
+	.span-price {
+		font-weight: bold;
+		font-size:16px;
+	}
+	.span-price-lg {
+		font-weight: bold;
+		font-size:18px;
+	}
 }
 
 /*===============================================

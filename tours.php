@@ -26,7 +26,7 @@
                                             </div>
                                             <div class="col-xs-6 no-gutters" style="background-color: #f6f6f6">
                                                 <div class="row row-simple-line2">
-                                                    <span">Lorem ipsum dolor Lorem ipsum:</span><br>
+                                                    <span">Lorem dolor:</span><br>
                                                     <p></p>
                                                     <span class="span-price">8 Marzo<br>ore 11.30</span>
                                                 </div>
@@ -34,7 +34,7 @@
                                                     <button class="btn-secondary-vertical">Lorem</button>
                                                 </div>
                                                 <div class="row row-simple-line2">
-                                                    <span><img src="images/icons/calendar.png">&nbsp;Lorem ipsum dolor</span>
+                                                    <span><img src="images/icons/calendar.png">&nbsp;Lorem dolor</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -44,7 +44,7 @@
                                             </div>
                                             <div class="col-xs-6" style="background-color: #f6f6f6">
                                                 <div class="row row-simple-line2">
-                                                    <span">Lorem ipsum dolor Lorem ipsum:</span><br>
+                                                    <span">Lorem dolor:</span><br>
                                                     <p></p>
                                                     <span class="span-price">8 Marzo<br>ore 11.30</span>
                                                 </div>
@@ -52,7 +52,7 @@
                                                     <button class="btn-secondary-vertical">Lorem</button>
                                                 </div>
                                                 <div class="row row-simple-line2">
-                                                    <span><img src="images/icons/calendar.png">&nbsp;Lorem ipsum dolor</span>
+                                                    <span><img src="images/icons/calendar.png">&nbsp;Lorem dolor</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -62,7 +62,7 @@
                                             </div>
                                             <div class="col-xs-6" style="background-color: #f6f6f6">
                                                 <div class="row row-simple-line2">
-                                                    <span">Lorem ipsum dolor Lorem ipsum:</span><br>
+                                                    <span">Lorem dolor:</span><br>
                                                     <p></p>
                                                     <span class="span-price">8 Marzo<br>ore 11.30</span>
                                                 </div>
@@ -70,7 +70,7 @@
                                                     <button class="btn-secondary-vertical">Lorem</button>
                                                 </div>
                                                 <div class="row row-simple-line2">
-                                                    <span><img src="images/icons/calendar.png">&nbsp;Lorem ipsum dolor</span>
+                                                    <span><img src="images/icons/calendar.png">&nbsp;Lorem dolor</span>
                                                 </div>
                                             </div>
                                         </div>

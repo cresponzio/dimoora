@@ -263,7 +263,8 @@
                                                     </div>
                                                     <div class="row"  style="background-color: #ebebec">
                                                         <div class="col-xs-5 col-xs-offset-7">
-                                                             <span class="span-price-lg text-right" style="float: right;">Totale 450€</span>
+                                                            <span class="span-price text-right" style="float: right;">&nbsp;450€</span>
+                                                            <span class="lavel-simple-style text-right" style="margin-top:1px; float: right; ">Totale&nbsp;</span>
                                                         </div>
                                                     </div>
                                                 </div>

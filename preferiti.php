@@ -27,10 +27,10 @@
                                             <!--Panel black body-1-->
                                             <div class="panel-body" style="background-color: #f6f6f6">
                                                 <div class="row">
-                                                    <div class="col-xs-6">
+                                                    <div class="col-xs-8">
                                                         <span class="span-price-lg">€ 470.000,00</span>
                                                     </div>
-                                                    <div class="col-xs-6 text-right" style="display: block">
+                                                    <div class="col-xs-4 text-right" style="display: block">
                                                         <img src="images/icons/heart.png" style="margin-right: 10px; margin-top: 5px;">
                                                     </div>
                                                 </div>
@@ -55,10 +55,10 @@
                                             <!--Panel black body-1-->
                                             <div class="panel-body" style="background-color: #f6f6f6">
                                                 <div class="row">
-                                                    <div class="col-xs-6">
+                                                    <div class="col-xs-8">
                                                         <span class="span-price-lg">€ 470.000,00</span>
                                                     </div>
-                                                    <div class="col-xs-6 text-right" style="display: block">
+                                                    <div class="col-xs-4 text-right" style="display: block">
                                                         <img src="images/icons/heart.png" style="margin-right: 10px; margin-top: 5px;">
                                                     </div>
                                                 </div>
