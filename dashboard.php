@@ -111,6 +111,14 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
     section.inbox div.container p.text2.open{
         height: auto;
     }
+    
+    section.inbox div.container i.fa-trash{
+        float: right;
+        font-size: 17px;
+        color: var(--baseRed);
+        position: relative;
+        right: -30px;
+    }
 
     @media(max-width: 556px){
         section.inbox{
@@ -200,7 +208,8 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
 
             <i class="fas fa-angle-right"></i></p>
         <?php if($comunicazione["letto"] == 0) { ?><div class="new"></div><?php } ?>
-        <p class="text2" style="padding: 0px 40px;"><?php echo $comunicazione["testo"]; ?>
+        <p class="text2" style="padding: 0px 40px;"><i class="fas fa-trash" onclick="messageDelete(this)"></i>
+            <?php echo $comunicazione["testo"]; ?>
         <br>
         <?php
             $sql2 = "SELECT * FROM allegato_comunicazione WHERE id = :id";
@@ -287,6 +296,20 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
 
         $('div#' + id + ' p.text2').toggleClass('open');
         $('div#' + id + ' div.new')[0].style.display = "none";
+    }
+    
+    function messageDelete(item){
+        container = $(item)[0].parentElement.parentElement;
+        id = $(container).attr('id');
+        $.ajax({
+            url: 'php/comunicazioni/messageDelete.php',
+            method: 'GET',
+            data: {messageId:id},
+            dataType: 'text',
+            success: function(){
+                window.location.reload()
+            }
+        })
     }
 
 
