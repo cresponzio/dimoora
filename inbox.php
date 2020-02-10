@@ -60,6 +60,8 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         float: right;
         font-size: 12px;
         margin-top: 7px;
+        width: 75px;
+        text-align: right;
     }
     
     section.inbox div.container .time i{
@@ -74,7 +76,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         float: right;
         position: relative;
         top: 27px;
-        right: -40px;
+        right: -75px;
     }
     
     @media(max-width: 556px){
@@ -92,7 +94,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         }
         
         section.inbox div.container .message p.text{
-            width: 180px;
+            width: calc(100% - 75px);
         }
         
         section.items{
