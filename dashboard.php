@@ -6,13 +6,13 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
 ?>
 
 <style>
-    
+
     section.inbox{
         padding: 30px;
         margin-top: 30px;
         width: 400px;
     }
-    
+
     section.inbox h2{
         text-align: center;
         margin: 0px;
@@ -20,7 +20,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         padding-bottom: 10px;
     }
-    
+
     section.inbox div.container{
         width: calc(100% - 40px);
         margin: 0px auto;
@@ -28,11 +28,11 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         padding: 5px 20px;
         cursor: pointer;
     }
-    
+
     section.inbox div.container:hover{
         transform: scale(1.01);
     }
-    
+
     section.inbox div.container img{
         height: 30px;
         width: 30px;
@@ -41,24 +41,24 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         float:left;
         margin-top: 9px;
     }
-    
+
     section.inbox div.container .message{
         min-height: 50px;
         display: inline-table;
         margin-left: 10px;
     }
-    
+
     section.inbox div.container .message p{
         margin: 0px;
         padding-top: 9px;
     }
-    
+
     section.inbox div.container .message p.text{
         font-weight: 600;
         padding: 0px 0px 9px 0px;
         opacity: 1;
     }
-    
+
     section.inbox div.container .time{
         float: right;
         font-size: 12px;
@@ -66,11 +66,11 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         width: 75px;
         text-align: right;
     }
-    
+
     section.inbox div.container .time i{
         margin-left: 10px;
     }
-    
+
     section.inbox div.container div.new{
         height: 7px;
         width: 7px;
@@ -81,7 +81,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         top: 27px;
         right: -75px;
     }
-    
+
     section.inbox p.all{
         float: right;
         line-height: 20px;
@@ -90,7 +90,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         text-decoration: underline;
         margin: 10px;
     }
-    
+
     section.inbox p.all i{
         color: #000;
         font-size: 20px;
@@ -99,19 +99,19 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         position: relative;
         top: 4px;
     }
-    
+
     section.inbox div.container p.text2{
-        height:0px; 
+        height:0px;
         overflow:hidden;
         opacity: 1;
         color: rgba(0, 0, 0, 0.6);
         transition: height 2s;
     }
-    
+
     section.inbox div.container p.text2.open{
         height: auto;
     }
-    
+
     @media(max-width: 556px){
         section.inbox{
             width: 100%;
@@ -120,44 +120,44 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
             margin: 0px;
             box-shadow: none;
         }
-        
+
         section.inbox div.container{
             width: calc(100% - 40px);
             padding: 5px 20px;
         }
-        
+
         section.inbox div.container .message p.text{
             width: calc(100% - 75px);
         }
-        
+
         section.items{
             background: #F2F2F3;
             border-top: 1px solid #E8E8E8;
             border-bottom: 1px solid #E8E8E8;
         }
-        
+
         div.itemContainer{
             width: 100% !important;
             padding: 0px !important;
             background: #F2F2F3;
             margin: 0px;
         }
-        
+
         div.statContainer{
             width: 45% !important;
             margin: 0px 2.5%;
             padding: 15px 0px
         }
-        
+
         section#newR{
             background: #F2F2F3;
         }
-        
+
         section#newR h2{
             width:calc(100% - 110px);
             text-align: left;
         }
-        
+
         section#newR img{
             width: 90px;
         }
@@ -178,9 +178,9 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
             </div>
             <p class="time">
 
-                <?php 
+                <?php
 
-                $delta_time = time() - strtotime($comunicazione["data"]); 
+                $delta_time = time() - strtotime($comunicazione["data"]);
 
                 if($delta_time <= 86400) {
 
@@ -196,7 +196,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
 
                 }
 
-                ?> 
+                ?>
 
             <i class="fas fa-angle-right"></i></p>
         <?php if($comunicazione["letto"] == 0) { ?><div class="new"></div><?php } ?>
@@ -221,48 +221,48 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
 
         <a href="inbox.php"><p class="all">Tutti i messaggi <i class="fas fa-angle-right"></i></p></a>
     </section>
-    
+
     <section class="items" style="text-align:center;">
         <div class="itemContainer standardBoxStyle" style="height: auto; padding: 30px; text-align:left;">
-            
+
             <div style="border:1px solid #000; padding: 0px 10px; display:inline-block; border-radius: 2px;background: #fff;">
                 <p style="font-size: 16px;opacity:1; color: rgba(0,0,0,0.8);line-height: 30px; margin:0px; display:inline-block; text-decoration:line-through;text-decoration-color: var(--baseRed);">€ 500.000,00</p>
                 <p style="padding-left:30px; display: inline-block; color:var(--baseRed);opacity:1;margin:0px;">-10%</p>
                 <br>
             </div>
-            
+
             <h2 style="margin: 0px;">€ <?php echo number_format($immobile["prezzo"] , 0, ',', '.'); ?></h2>
-            
+
             <div id="left" style="width; 190px; float:left; padding: 10px 0px 0px 0px;">
                 <h5 style="margin-left: 0px; width: auto;"><?php echo $immobile["via"]; ?> <?php echo $immobile["civico"]; ?></h5>
-                <p style="margin-left: 0px"><?php echo $immobile["proprieta"]; ?></p>
+                <p style="margin-left: 0px"><?php echo $immobile["proprieta"]; ?></p>a
                 <h4 style="padding-right: 10px; margin-left:0px; border-right: 1px solid #000;"><?php echo $immobile["mq_coperti"]; ?> <span>Mq</span></h4>
                 <h4 style="padding-left: 10px; margin-left:0px">4 <span>Locali</span></h4>
             </div>
-            
+
             <div id="right" style="position:relative; top: -40px;">
                 <button style="border-radius: 2px">Modifica</button>
                 <p style="text-align:left; position:relative; top: 10px; opacity:1; color:rgba(0,0,0,0.6);"><i class="fas fa-history" style="position: relative; float:left; top: -3px;margin-right: 7px; color: #32A028;"></i> Ultima modifica<br> 12.08.2019</p>
             </div>
-            
+
             <div id="stat" class="group" style="height: auto;">
-                
+
                 <div id="bottomLeft" class="statContainer" style="background: #fff;">
                     <i class="far fa-heart"></i>
                     <p>Aggiunto ai preferiti</p>
                     <h2>0</h2>
                 </div>
-                
+
                 <div id="upLeft" class="statContainer" style="background: #fff;">
                     <i class="far fa-eye" style="color: #F4B200;"></i>
                     <p>Visite ricevute</p>
                     <h2>0</h2>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
+
     <section id="newR"  style="padding: 30px; text-align:center;">
         <img src="img/dashboard1.png" style="width: 90px; display:inline-block; margin-right: 10px;">
         <h2 style="display:inline-block; position:relative; top: -40px;line-height:25px;">Di quale servizio hai bisogno?</h2>
@@ -271,7 +271,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
 </body>
 <script>
     $('#dashboard').addClass('open');
-    
+
     function messageSeen(item){
         id = $(item).attr('id');
         $.ajax({
@@ -284,9 +284,9 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
             }
         })
 
-        
+
         $('div#' + id + ' p.text2').toggleClass('open');
-        $('div#' + id + ' div.new')[0].style.display = "none"; 
+        $('div#' + id + ' div.new')[0].style.display = "none";
     }
 
 
