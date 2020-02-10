@@ -138,7 +138,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         </form>
         
         <?php while($comunicazione = $query1->fetch()): ?>
-        <div class="container" id="<?php echo $comunicazione["id"]; ?>" onclick="messageSeen(this)">
+        <div class="container inboxContainer" id="<?php echo $comunicazione["id"]; ?>" onclick="messageSeen(this)">
             <img src="img/profile.jpg">
             <div class="message">
                 <p><?php
@@ -150,7 +150,6 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         <?php if($comunicazione["letto"] == 0) { ?><div class="new"></div><?php } ?>
         <p style="padding: 0px 40px;"><?php echo $comunicazione["testo"]; ?>
         <br>
-        <a href="">
         <?php
             $sql2 = "SELECT * FROM allegato_comunicazione WHERE id = :id";
             $query2 = $pdo->prepare($sql2);
