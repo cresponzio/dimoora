@@ -60,6 +60,8 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         float: right;
         font-size: 12px;
         margin-top: 7px;
+        width: 75px;
+        text-align: right;
     }
     
     section.inbox div.container .time i{
@@ -74,7 +76,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         float: right;
         position: relative;
         top: 27px;
-        right: -40px;
+        right: -75px;
     }
     
     @media(max-width: 556px){
@@ -92,7 +94,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
         }
         
         section.inbox div.container .message p.text{
-            width: 180px;
+            width: calc(100% - 75px);
         }
         
         section.items{
@@ -146,7 +148,27 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
                 echo $mittente["nome"]; ?> <?php echo $mittente["cognome"]; ?></p>
                 <p class="text"><?php echo $comunicazione["titolo"]; ?></p>
             </div>
-            <p class="time">9:00 <i class="fas fa-angle-right"></i></p>
+            <p class="time">
+
+                <?php 
+
+                $delta_time = time() - strtotime($comunicazione["data"]); 
+
+                if($delta_time <= 86400) {
+
+                    echo date('H:i', strtotime($comunicazione["data"]));
+
+                } else if($delta_time > 86400 && $delta_time <= 172800) {
+
+                    echo "Ieri";
+
+                } else if($delta_time > 172800){
+
+                    echo date('d-m-Y', strtotime($comunicazione["data"]));
+
+                }
+
+                ?> 
         <?php if($comunicazione["letto"] == 0) { ?><div class="new"></div><?php } ?>
         <p style="padding: 0px 40px;"><?php echo $comunicazione["testo"]; ?>
         <br>
@@ -156,7 +178,7 @@ $query1->setFetchMode(PDO::FETCH_ASSOC);
             $query2->execute(['id' => $comunicazione["id"]]);
             $allegato = $query2->fetch();
 
-            if($allegato["percorso"] != "") {
+            if($allegato) {
         ?>
         <a href="<?php echo $allegato["percorso"]; ?>" style="display:block; margin-top: 10px;"><i class="fas fa-paperclip" style="color:var(--baseRed);margin-right: 5px;"></i>
                 Visualizza Allegato
